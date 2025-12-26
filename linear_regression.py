@@ -2,8 +2,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 
-data = pd.read_csv('study_data.csv')
+data = pd.read_csv('datasets/Salary_dataset.csv')
 
-# The CSV uses the column name exam_score, so select it explicitly
-plt.scatter(data.study_hours, data.exam_score)
-plt.show()
+# SImple csv data loading
+plt.scatter(data.YearsExperience, data.Salary, color='blue')
+# plt.title('Experience vs Salary')
+# plt.xlabel('Years of Experience')
+# plt.ylabel('Salary')
+# plt.show()
+
+def loss_function(): # same as "mean square error"
+    pass
